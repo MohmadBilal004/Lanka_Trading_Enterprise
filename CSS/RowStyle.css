@@ -1,0 +1,12 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: minmax(30vw,160px);
+    grid-gap: 0.5em;
+ }
+ 
+ #changeImg img{
+     height: 100%;
+     width:100%;
+     object-fit: fill;
+ }

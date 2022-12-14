@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("Background1.jpg");
+    background-repeat: no-repeat; /*This is to avoid the image getting tiled*/
+    background-attachment: fixed;  /*Here fixed means that image will not move when scrolled It will stay the same or Content will run on top of the image*/
+    background-size: cover;
+}
+
+.loginbox{
+    width: 450px;
+    height: 480px;
+    background: rgba(0,0,0,0.5);
+    color:#fff;
+    top: 60%;
+    left :50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 70px 30px;
+}
+
+
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[ type = "text"],input[ type = "password"],input[ type = "number"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.loginbox input[ type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.loginbox input[ type = "submit"]:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color:#000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    text-align: center;
+}
+
+.loginbox a:hover{
+    color:#ffc107;
+}

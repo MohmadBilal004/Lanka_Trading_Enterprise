@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Background1.jpg");
+    background-repeat: no-repeat;
+    /*This is to avoid the image getting tiled*/
+    background-attachment: fixed;
+    /*Here fixed means that image will not move when scrolled It will stay the same or Content will run on top of the image*/
+    background-size: cover;
+
+}
+
+
+.add-box {
+    width: 750px;
+    height: 760px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 70%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 30px 70px;
+    align-content: center;
+}
+
+.add-box h1 {
+    color: darkorange;
+    margin-top: none;
+    left: 50%;
+}
+
+.add-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+.add-box input {
+    width: 50%;
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+
+.add-box textarea {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 1px;
+}
+
+.add-box select {
+    width: 50%;
+    margin-bottom: 1px;
+}
+
+.add-box input[ type="text"],
+input[ type="file"],
+input[ type="number"],
+input[ type="select"],
+textarea {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.add-box input[ type="submit"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 160px;
+    background: #6e0505;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+
+}
+
+.add-box input[ type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.add-box input[ type="reset"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 160px;
+    background: #6e0505;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+
+}
+
+.add-box input[ type="reset"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+label {
+    width: 240px;
+    display: inline-block;
+}
+
+
+select {
+    padding: 6px;
+    font-size: 14px;
+}

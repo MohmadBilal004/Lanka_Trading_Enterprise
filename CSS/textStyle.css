@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+}
+
+h4{
+  font-size: larger;
+  font:bold;
+}
+.p1{
+   font:25px;
+}
+.p2{
+  font:25px;
+  text-align: center;
+  top: 5%;
+  color: gray;
+}
+/*tr 
+{
+  background-color:transparent;
+  color:white;
+}*/
+
+label{
+  font-size: larger;
+  font:bold;
+}
+
+
+.textstyle1{
+  padding:5px 20px;
+  font-size: medium;
+}
+
+.textstyle2{
+  padding:5px 100px;
+  font-size: medium;
+}
+
+textarea{
+  padding:140px 160px;
+  font-size: medium;
+}
+
+.message{
+  top:50%;
+}
+
+.lastRow{
+  background: black;
+  color: white;
+  border: none;
+  padding: none;
+  height: 500 ;
+  width: 1475;
+  position: relative;
+  margin: none;
+}
+
+

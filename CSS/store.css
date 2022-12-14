@@ -1,0 +1,68 @@
+
+body{
+    background-image: url("Background1.jpg");
+    background-repeat: no-repeat; /*This is to avoid the image getting tiled*/
+    background-attachment: fixed;  /*Here fixed means that image will not move when scrolled It will stay the same or Content will run on top of the image*/
+    background-size: cover;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  div{
+    box-sizing: border-box;
+  }
+
+  .burger{
+    display: none;
+  }
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition:all 0.5s ease;
+  }
+
+
+    .burger{
+      display: block;
+    }
+   
+
+ 
