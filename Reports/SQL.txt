@@ -1,0 +1,45 @@
+CREATE TABLE `it21714948`.`registration` ( 
+`CustomerID` INT(6) NOT NULL AUTO_INCREMENT , 
+`Fname` VARCHAR(500) NOT NULL , 
+`Lname` VARCHAR(500) NOT NULL , 
+`Email` VARCHAR(50000) NOT NULL , 
+`ContactNo` INT(10) NOT NULL ,
+ `Password` VARCHAR(50) NOT NULL , 
+PRIMARY KEY (`CustomerID`)) ENGINE = MyISAM; 
+
+
+-----------------------------------------------------
+
+
+CREATE TABLE `it21714948`.`producttbl` (
+ `ProductID` INT(6) NOT NULL AUTO_INCREMENT , 
+`Productname` VARCHAR(500) NOT NULL ,
+ `status` VARCHAR(500) NOT NULL , 
+`Price` FLOAT(15) NOT NULL , 
+`Image` VARCHAR(500) NOT NULL , 
+PRIMARY KEY (`ProductID`)) ENGINE = MyISAM; 
+
+---------------------------------------------------
+CREATE TABLE `it21714948`.`feedbacktbl` ( 
+`FeedbackID` INT NOT NULL AUTO_INCREMENT ,
+ `CustomerID` INT NOT NULL , 
+`ProductID` INT NOT NULL , 
+`Feedback` varchar(50000) NOT NULL , 
+`Rating` INT NOT NULL , PRIMARY KEY (`FeedbackID`),
+ CONSTRAINT fk1 FOREIGN KEY (CustomerID) REFERENCES registration(CustomerID),
+ CONSTRAINT fk2 FOREIGN KEY (ProductID) REFERENCES producttbl(ProductID) ) ENGINE = MyISAM; 
+
+-----------------------------------------------------
+CREATE TABLE `it21714948`.`billtbl` ( 
+`BillID` INT(6) NOT NULL AUTO_INCREMENT , 
+`CustomerID` INT(6) NOT NULL ,
+ `ProductID` INT(6) NOT NULL , 
+`Bill_Date` DATE NOT NULL , 
+`Delivery_Date` DATE NOT NULL , 
+`Payment_Type` VARCHAR(20) NOT NULL , 
+`Quantity` INT(100) NOT NULL , 
+`Discount` FLOAT NOT NULL , 
+`Total_Price` FLOAT NOT NULL , 
+PRIMARY KEY (`BillID`), 
+CONSTRAINT fk1 FOREIGN KEY (CustomerID) REFERENCES registration(CustomerID),
+ CONSTRAINT fk2 FOREIGN KEY (ProductID) REFERENCES producttbl(ProductID) ) ENGINE = MyISAM; 

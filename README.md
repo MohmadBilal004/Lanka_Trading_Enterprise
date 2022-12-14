@@ -1,2 +1,2 @@
-# Lanka_Trading_Enterprise
-A project on Web Development Module 
+# Lanka-Trading-Enterprise
+Project on Web Application Development Module (Based on an E-commerce Website)
